@@ -1,14 +1,2 @@
-#include <stdio.h>
-
-/* #define macro_name character_sequence */
-#define LIMIT 10
-
-int main()
-{
-    int counter;
-    for(counter =1; counter <=LIMIT; counter++)
-    {
-        printf("%d\n",counter);
-    }
-return 0;
-}
+#!/bin/bash
+gcc -E $CFILE>c
