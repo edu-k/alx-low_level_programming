@@ -1,7 +1,7 @@
 #include<stdio.h>
 /**
- * main - eden
- * Return : Always 0
+ * main - Lanzador
+ * Return: Always 0
  *
  */
 int main(void)
