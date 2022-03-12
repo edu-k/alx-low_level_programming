@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
-/*
-*main - generates random number n 
-*Description: determines whether n is 0, n > 5 or n < 6
+/**
+*main - Lanzador
+*
 *Return: Always 0
+*
 */
 
 int main(void)
@@ -15,7 +15,7 @@ int main(void)
 			srand(time(0));
 		n = rand() - RAND_MAX / 2;
 		lastdigit = n % 10;
-		printf("Last digit of %d is %d and is", n, lastdigit);
+		printf("Last digit of %d is %d and is ", n, lastdigit);
 
 		if (lastdigit > 5)
 		{
