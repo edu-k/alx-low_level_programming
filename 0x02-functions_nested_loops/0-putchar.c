@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include"main.h"
+#include "main.h"
 /**
  * main - Lanzador
  * Return: Always 0
