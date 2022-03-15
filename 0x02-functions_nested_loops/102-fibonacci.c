@@ -1,5 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
+/**
+ * main - represent Entry Point to the program
+ *
+ * Return: 0 to stop the program
+ */
 int main(void)
 {
 	double a = 0;
