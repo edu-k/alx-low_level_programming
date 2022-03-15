@@ -1,53 +1,29 @@
 #include <stdio.h>
+
 /**
- * main - Entry point
+ * main - main function
  *
- * Return: Always 0 (Success)
+ * Return: 0
  */
 int main(void)
 {
-	long int n1 = 1;
-	long int n2 = 1;
-	int i, c;
-	long int  sum, sum1, sum2, var11, var12, var21, var22;
-		for (i = 0; i < 98; i++)
+	int counter = 2;
+	float a = 1;
+	float b = a + 1;
+	float c = a + b;
+		printf("%.0f, ", a);
+		printf("%.0f, ", b);
+		while (counter < 98)
 	{
-		if (i == 0)
+		counter++;
+		printf("%.0f", c);
+		a = b;
+		b = c;
+		c = a + b;
+		if (counter < 98)
 		{
-			printf("%.0ld, ", n1);
+			printf(", ");
 		}
-		else if (i < 91)
-		{
-			sum = n1 + n2;
-			n1 = n2;
-			n2 = sum;
-			printf("%ld, ", sum);
-		}
-		else
-		{
-			if (i == 91)
-			{ var11 = n1 / 1000000000;
-				var12 = n1 % 1000000000;
-				var21 = n2 / 1000000000;
-				var22 = n2 % 1000000000;
-			}
-			else
-			{
-				var11 = var21;
-				var12 = var22;
-				var21 = sum1;
-				var22 = sum2;
-			}
-			sum2 = (var12 + var22) % 1000000000;
-			c = (var12 + var22) / 1000000000;
-			sum1 = var11 + var21 + c;
-			if (!(i == 97))
-				printf("%ld%ld, ", sum1, sum2);
-			else
-				printf("%ld%ld", sum1, sum2);
-		}
-	}
-	printf("\n");
-	return (0);
+		printf("\n");
+		return (0);
 }
-
