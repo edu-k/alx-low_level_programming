@@ -1,7 +1,7 @@
 global _start
 section .data
 hello:
-printf"Hello, Holberton", 14
+db "Hello, Holberton", 14
 section .text
 _start:
 mov rax, 1
